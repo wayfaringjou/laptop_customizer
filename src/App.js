@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Summary from './Summary/Summary';
 import './App.css';
 import Features from './Features/Features';
-import FEATURES from './FEATURES'
+import FeaturesStore from './FeaturesStore'
 
 
 class App extends Component {
@@ -53,7 +53,7 @@ class App extends Component {
         <main>
           <Features 
             selected={this.state.selected}
-            features={FEATURES}
+            features={FeaturesStore}
             USCurrencyFormat={this.props.USCurrencyFormat}
             onSelectionChange={this.updateFeature}
           /> 
